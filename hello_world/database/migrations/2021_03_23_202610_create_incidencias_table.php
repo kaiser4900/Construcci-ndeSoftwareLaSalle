@@ -15,6 +15,9 @@ class CreateIncidenciasTable extends Migration
     {
         Schema::create('incidencias', function (Blueprint $table) {
             $table->id();
+            $table->string('email');
+            $table->string('tema');
+            $table->text('detalle');
             $table->timestamps();
         });
     }
